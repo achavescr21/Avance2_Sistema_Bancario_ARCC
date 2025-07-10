@@ -2,7 +2,7 @@ import javax.swing.*;
 
 public class CreacionDeCuentas extends JFrame {
     public CreacionDeCuentas() {
-        setTitle("Crear Cuenta");
+        setTitle("Crear Cuenta Bancaria");
         setSize(350, 350);
         setLocationRelativeTo(null);
         setLayout(null);
@@ -18,7 +18,7 @@ public class CreacionDeCuentas extends JFrame {
         JTextField t5 = new JTextField();
         JLabel l6 = new JLabel("PIN:");
         JPasswordField t6 = new JPasswordField();
-        JButton guardarBtn = new JButton("Guardar");
+        JButton guardarBtn = new JButton("Guardar datos del cliente");
         l1.setBounds(30, 20, 80, 25); t1.setBounds(120, 20, 180, 25);
         l2.setBounds(30, 50, 80, 25); t2.setBounds(120, 50, 180, 25);
         l3.setBounds(30, 80, 80, 25); t3.setBounds(120, 80, 180, 25);
@@ -43,7 +43,7 @@ public class CreacionDeCuentas extends JFrame {
                 JOptionPane.showMessageDialog(this, "Cuenta creada correctamente.");
                 dispose();
             } catch (Exception ex) {
-                JOptionPane.showMessageDialog(this, "Datos ingresado no válidos.");
+                JOptionPane.showMessageDialog(this, "Datos ingresados no válidos.");
             }
         });
     }
